@@ -12,12 +12,12 @@ int main() {
         std::cout << "You are not a administrator." << std::endl;
         std::cout << "Please enter a password for username: ";
         std::cin >> password;
-        if (password > 5) {
+        while (password > 5) {
             std::cout << "Password is too short." << std::endl;
             std::cout << "Please enter a password for username: ";
             std::cin >> password;
         }
-        else if (password <= 5) {
+         if (password <= 5) {
             std::cout << "Welcome " + username + " to © iSAD!" << std::endl;
         }
     }
